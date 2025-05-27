@@ -179,11 +179,11 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .intro-content {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(25px);
             padding: 4rem 3rem;
             border-radius: 30px;
@@ -202,8 +202,18 @@
         }
 
         .services-section {
-            background: linear-gradient(135deg, #f8f9ff 0%, #fff 50%, #f0f8ff 100%);
+            background: url('gallery14.jpeg') center/cover;
             position: relative;
+        }
+
+        .services-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(248, 249, 255, 0.8);
         }
 
         .services-grid {
@@ -214,18 +224,8 @@
             margin-top: 4rem;
         }
 
-        .services-grid .service-card:nth-child(4) {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        .services-grid .service-card:nth-child(5) {
-            grid-column: 2 / 4;
-            grid-row: 2 / 3;
-        }
-
         .service-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(20px);
             padding: 3rem 2.5rem;
             border-radius: 25px;
@@ -258,7 +258,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.88);
+            background: rgba(255, 255, 255, 0.8);
             z-index: 1;
         }
 
@@ -272,6 +272,7 @@
         .service-card.shichigosan { background-image: url('gallery8.jpeg'); }
         .service-card.hakama { background-image: url('gallery9.jpeg'); }
         .service-card.hair { background-image: url('gallery10.jpeg'); }
+        .service-card.lesson { background-image: url('gallery11.jpeg'); }
 
         .service-card:hover {
             transform: translateY(-15px) scale(1.02);
@@ -307,7 +308,18 @@
         }
 
         .area-time-section {
-            background: linear-gradient(135deg, #fff5f8 0%, #fff 50%, #f0f8ff 100%);
+            background: url('gallery15.jpeg') center/cover;
+            position: relative;
+        }
+
+        .area-time-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 245, 248, 0.8);
         }
 
         .area-time-content {
@@ -318,7 +330,7 @@
         }
 
         .info-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(25px);
             padding: 3.5rem 2.5rem;
             border-radius: 25px;
@@ -347,7 +359,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 25px;
             z-index: 1;
         }
@@ -386,7 +398,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .gallery-section .section-inner {
@@ -555,11 +567,6 @@
                 grid-template-rows: auto;
                 gap: 2rem; 
             }
-            .services-grid .service-card:nth-child(4),
-            .services-grid .service-card:nth-child(5) {
-                grid-column: auto;
-                grid-row: auto;
-            }
             .nav-links { display: none; }
             .hero-content { padding: 2rem; }
             .service-card, .info-card, .contact-card { padding: 2rem; }
@@ -657,6 +664,11 @@
                     <p>洋髪・和髪対応のプロフェッショナルなヘアセットサービス。</p>
                     <div class="price">￥3,000〜</div>
                 </div>
+                <div class="service-card lesson">
+                    <h3>👩‍🏫 着付け教室</h3>
+                    <p>初心者から経験者まで、丁寧にお教えします。マンツーマンレッスンで確実に上達。</p>
+                    <div class="price">￥5,000〜/1h</div>
+                </div>
             </div>
         </div>
     </section>
@@ -726,4 +738,4 @@
                 </div>
             </div>
         </div>
-    </section
+    </section>
