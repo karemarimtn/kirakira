@@ -183,7 +183,7 @@
         }
 
         .intro-content {
-            background: rgba(255, 255, 255, 0.85);
+            background: linear-gradient(135deg, #fce4ec 0%, #ffffff 100%);
             backdrop-filter: blur(25px);
             padding: 4rem 3rem;
             border-radius: 30px;
@@ -476,6 +476,9 @@
         .contact-card h3 {
             font-size: 1.4rem;
             margin-bottom: 1rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
         }
 
         .contact-card a {
@@ -554,6 +557,12 @@
 
         .nav-links a:hover {
             color: #d63384;
+        }
+
+        .section h2.contact-title {
+            color: white !important;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
         }
 
         @media (max-width: 768px) {
@@ -713,11 +722,17 @@
 
     <section id="contact" class="section contact-section">
         <div class="section-inner">
-            <h2 style="color: white;">予約・お問い合わせ</h2>
+            <h2 class="contact-title">予約・お問い合わせ</h2>
             <p style="text-align: center; font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem;">
                 お気軽にお問い合わせください。丁寧にご対応いたします。
             </p>
             <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="icon">📧</div>
+                    <h3>メール</h3>
+                    <p style="margin: 1rem 0;">件名：着付け依頼</p>
+                    <a href="mailto:kiki_lala112@yahoo.co.jp">kiki_lala112@yahoo.co.jp</a>
+                </div>
                 <div class="contact-card">
                     <div class="icon">📧</div>
                     <h3>メール</h3>
