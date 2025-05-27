@@ -20,7 +20,7 @@
 
         .hero {
             height: 100vh;
-            background: radial-gradient(ellipse at center, #ff6b9d 0%, #ffa8c5 35%, #ffd1dc 70%, #fff0f5 100%);
+            background: radial-gradient(ellipse at center, #b8860b 0%, #daa520 35%, #f4e4bc 70%, #fff8e7 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,7 +35,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="stars" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.2)"/><circle cx="25" cy="15" r="0.5" fill="rgba(255,255,255,0.15)"/><circle cx="35" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23stars)"/></svg>') repeat;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="stars" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.3)"/><circle cx="25" cy="15" r="0.5" fill="rgba(255,255,255,0.25)"/><circle cx="35" cy="30" r="1.5" fill="rgba(255,255,255,0.2)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23stars)"/></svg>') repeat;
             animation: twinkle 30s linear infinite;
         }
 
@@ -79,7 +79,7 @@
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, #ff6b9d, #ffa8c5, #ff6b9d);
+            background: linear-gradient(45deg, #b8860b, #daa520, #cd853f);
             background-size: 200% 200%;
             color: white;
             padding: 1rem 2.5rem;
@@ -88,7 +88,7 @@
             font-size: 1.1rem;
             font-weight: bold;
             transition: all 0.4s ease;
-            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+            box-shadow: 0 8px 25px rgba(184, 134, 11, 0.4);
             animation: gradientShift 3s ease infinite, fadeInUp 1.5s ease-out 1s both;
         }
 
@@ -99,7 +99,7 @@
 
         .cta-button:hover {
             transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.6);
+            box-shadow: 0 15px 40px rgba(184, 134, 11, 0.6);
         }
 
         @keyframes fadeInUp {
@@ -118,7 +118,7 @@
             position: absolute;
             font-size: 2.5rem;
             animation: cherryFloat 20s infinite linear;
-            filter: drop-shadow(0 0 10px rgba(255, 182, 193, 0.6));
+            filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.6));
         }
 
         @keyframes cherryFloat {
@@ -149,7 +149,7 @@
             font-size: 3rem;
             text-align: center;
             margin-bottom: 4rem;
-            background: linear-gradient(45deg, #d63384, #ff6b9d, #ffa8c5);
+            background: linear-gradient(45deg, #8b4513, #b8860b, #daa520);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -161,10 +161,10 @@
             display: block;
             width: 100px;
             height: 4px;
-            background: linear-gradient(45deg, #ff6b9d, #ffa8c5, #ffd1dc);
+            background: linear-gradient(45deg, #b8860b, #daa520, #f4e4bc);
             margin: 1.5rem auto;
             border-radius: 2px;
-            box-shadow: 0 2px 10px rgba(255, 107, 157, 0.3);
+            box-shadow: 0 2px 10px rgba(184, 134, 11, 0.3);
         }
 
         .intro-section {
@@ -179,15 +179,15 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 248, 231, 0.8);
         }
 
         .intro-content {
-            background: linear-gradient(135deg, #fce4ec 0%, #ffffff 100%);
+            background: linear-gradient(135deg, #f5f5dc 0%, #ffffff 100%);
             backdrop-filter: blur(25px);
             padding: 4rem 3rem;
             border-radius: 30px;
-            box-shadow: 0 30px 100px rgba(214, 51, 132, 0.15);
+            box-shadow: 0 30px 100px rgba(139, 69, 19, 0.15);
             margin: 2rem auto;
             max-width: 800px;
             text-align: center;
@@ -198,7 +198,7 @@
 
         .intro-content:hover {
             transform: translateY(-8px);
-            box-shadow: 0 40px 120px rgba(214, 51, 132, 0.2);
+            box-shadow: 0 40px 120px rgba(139, 69, 19, 0.2);
         }
 
         .services-section {
@@ -213,7 +213,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(248, 249, 255, 0.8);
+            background: rgba(255, 248, 235, 0.8);
         }
 
         .services-grid {
@@ -229,7 +229,7 @@
             backdrop-filter: blur(20px);
             padding: 3rem 2.5rem;
             border-radius: 25px;
-            box-shadow: 0 20px 60px rgba(214, 51, 132, 0.08);
+            box-shadow: 0 20px 60px rgba(139, 69, 19, 0.08);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
@@ -246,8 +246,8 @@
             left: 0;
             width: 100%;
             height: 6px;
-            background: linear-gradient(45deg, #ff6b9d, #ffa8c5, #ffd1dc);
-            box-shadow: 0 2px 15px rgba(255, 107, 157, 0.4);
+            background: linear-gradient(45deg, #b8860b, #daa520, #f4e4bc);
+            box-shadow: 0 2px 15px rgba(184, 134, 11, 0.4);
             z-index: 3;
         }
 
@@ -276,11 +276,11 @@
 
         .service-card:hover {
             transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 35px 100px rgba(214, 51, 132, 0.2);
+            box-shadow: 0 35px 100px rgba(139, 69, 19, 0.2);
         }
 
         .service-card h3 {
-            background: linear-gradient(45deg, #d63384, #ff6b9d);
+            background: linear-gradient(45deg, #8b4513, #b8860b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -299,7 +299,7 @@
         .service-card .price {
             font-size: 1.5rem;
             font-weight: bold;
-            background: linear-gradient(45deg, #ff6b9d, #ffa8c5);
+            background: linear-gradient(45deg, #b8860b, #daa520);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -319,7 +319,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 245, 248, 0.8);
+            background: rgba(255, 248, 225, 0.8);
         }
 
         .area-time-content {
@@ -334,7 +334,7 @@
             backdrop-filter: blur(25px);
             padding: 3.5rem 2.5rem;
             border-radius: 25px;
-            box-shadow: 0 25px 80px rgba(16, 185, 129, 0.08);
+            box-shadow: 0 25px 80px rgba(184, 134, 11, 0.08);
             text-align: center;
             transition: all 0.4s ease;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -371,7 +371,7 @@
 
         .info-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 35px 100px rgba(16, 185, 129, 0.15);
+            box-shadow: 0 35px 100px rgba(184, 134, 11, 0.15);
         }
 
         .info-card .icon {
@@ -408,7 +408,7 @@
 
         .gallery-link {
             display: inline-block;
-            background: linear-gradient(45deg, #ff6b9d, #ffa8c5, #ffd1dc);
+            background: linear-gradient(45deg, #b8860b, #daa520, #f4e4bc);
             background-size: 200% 200%;
             color: white;
             padding: 2rem 4rem;
@@ -417,18 +417,18 @@
             font-size: 1.3rem;
             font-weight: bold;
             transition: all 0.4s ease;
-            box-shadow: 0 15px 50px rgba(214, 51, 132, 0.3);
+            box-shadow: 0 15px 50px rgba(139, 69, 19, 0.3);
             animation: gradientShift 4s ease infinite;
             margin-top: 2rem;
         }
 
         .gallery-link:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 25px 70px rgba(214, 51, 132, 0.5);
+            box-shadow: 0 25px 70px rgba(139, 69, 19, 0.5);
         }
 
         .contact-section {
-            background: linear-gradient(135deg, #ff6b9d 0%, #ffa8c5 35%, #ffd1dc 70%, #fff0f5 100%);
+            background: linear-gradient(135deg, #b8860b 0%, #daa520 35%, #f4e4bc 70%, #fff8e7 100%);
             color: white;
             position: relative;
         }
@@ -440,7 +440,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="60" r="1.5" fill="rgba(255,255,255,0.15)"/></svg>') repeat;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.15)"/><circle cx="80" cy="60" r="1.5" fill="rgba(255,255,255,0.2)"/></svg>') repeat;
             animation: twinkle 25s linear infinite;
         }
 
@@ -520,7 +520,7 @@
         .logo {
             font-size: 2rem;
             font-weight: bold;
-            background: linear-gradient(45deg, #d63384, #ff6b9d);
+            background: linear-gradient(45deg, #8b4513, #b8860b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -547,7 +547,7 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background: linear-gradient(45deg, #ff6b9d, #ffa8c5);
+            background: linear-gradient(45deg, #b8860b, #daa520);
             transition: width 0.3s ease;
         }
 
@@ -556,7 +556,7 @@
         }
 
         .nav-links a:hover {
-            color: #d63384;
+            color: #8b4513;
         }
 
         .section h2.contact-title {
