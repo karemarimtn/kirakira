@@ -20,7 +20,7 @@
 
         .hero {
             height: 100vh;
-            background: radial-gradient(ellipse at center, #b8860b 0%, #daa520 35%, #f4e4bc 70%, #fff8e7 100%);
+            background: url('gallery16.jpeg') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -29,6 +29,16 @@
         }
 
         .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.3), rgba(218, 165, 32, 0.4), rgba(244, 228, 188, 0.3));
+        }
+
+        .hero::after {
             content: '';
             position: absolute;
             top: 0;
