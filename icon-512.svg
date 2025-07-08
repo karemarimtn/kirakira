@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 金色の背景 -->
+  <rect width="512" height="512" rx="100" fill="url(#goldGradient)"/>
+  
+  <!-- グラデーション定義 -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8860b;stop-opacity:1" />
+      <stop offset="35%" style="stop-color:#daa520;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#f4e4bc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fff8e7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="kimonoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a0522d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cd853f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="whiteFade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#fff8e7;stop-opacity:0.7" />
+    </linearGradient>
+    <radialGradient id="highlight" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 装飾的な背景パターン -->
+  <circle cx="128" cy="128" r="24" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="384" cy="128" r="18" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="128" cy="384" r="15" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="384" cy="384" r="21" fill="rgba(255,255,255,0.09)"/>
+  <circle cx="256" cy="100" r="12" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="100" cy="256" r="16" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="412" cy="256" r="14" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="256" cy="412" r="18" fill="rgba(255,255,255,0.09)"/>
+  
+  <!-- 着物のシルエット -->
+  <g transform="translate(256,256)">
+    <!-- 着物本体 -->
+    <path d="M-100,-145 L-70,-145 L-70,-30 L-100,115 L-128,115 L-128,85 L-155,85 L-155,30 L-128,30 L-128,-115 L-100,-115 Z" 
+          fill="url(#kimonoGradient)" opacity="0.85"/>
+    <path d="M100,-145 L70,-145 L70,-30 L100,115 L128,115 L128,85 L155,85 L155,30 L128,30 L128,-115 L100,-115 Z" 
+          fill="url(#kimonoGradient)" opacity="0.85"/>
+    
+    <!-- 着物の中央部分 -->
+    <rect x="-70" y="-145" width="140" height="260" fill="url(#kimonoGradient)" opacity="0.9"/>
+    
+    <!-- 帯（大きめ） -->
+    <rect x="-128" y="-30" width="256" height="42" fill="#8b4513" opacity="0.9"/>
+    <rect x="-115" y="-21" width="230" height="26" fill="#daa520" opacity="0.8"/>
+    
+    <!-- 帯の装飾 -->
+    <rect x="-100" y="-13" width="200" height="10" fill="url(#whiteFade)" opacity="0.6"/>
+    <circle cx="0" cy="-6" r="12" fill="#fff8e7" opacity="0.8"/>
+    <circle cx="-40" cy="-6" r="6" fill="#fff8e7" opacity="0.6"/>
+    <circle cx="40" cy="-6" r="6" fill="#fff8e7" opacity="0.6"/>
+    
+    <!-- 襟 -->
+    <path d="M-70,-145 L-42,-115 L42,-115 L70,-145 L42,-145 L0,-115 L-42,-145 Z" 
+          fill="#fff8e7" opacity="0.9"/>
+    
+    <!-- 襟の装飾 -->
+    <path d="M-42,-130 L-25,-130 L-25,-120 L-42,-120 Z" fill="url(#whiteFade)" opacity="0.8"/>
+    <path d="M42,-130 L25,-130 L25,-120 L42,-120 Z" fill="url(#whiteFade)" opacity="0.8"/>
+    
+    <!-- 袖の装飾 -->
+    <path d="M-128,-100 L-100,-100 L-100,-70 L-128,-70 Z" fill="url(#whiteFade)" opacity="0.7"/>
+    <path d="M128,-100 L100,-100 L100,-70 L128,-70 Z" fill="url(#whiteFade)" opacity="0.7"/>
+    
+    <!-- 装飾的な花模様 -->
+    <circle cx="-42" cy="-85" r="12" fill="#fff8e7" opacity="0.7"/>
+    <circle cx="58" cy="-72" r="10" fill="#fff8e7" opacity="0.6"/>
+    <circle cx="-28" cy="30" r="9" fill="#fff8e7" opacity="0.5"/>
+    <circle cx="42" cy="42" r="8" fill="#fff8e7" opacity="0.6"/>
+    <circle cx="-55" cy="60" r="7" fill="#fff8e7" opacity="0.5"/>
+    <circle cx="25" cy="75" r="6" fill="#fff8e7" opacity="0.6"/>
+    
+    <!-- 桜の花びら（大きめ） -->
+    <g transform="translate(-28,-100)">
+      <path d="M0,0 L6,-9 L12,0 L6,9 Z" fill="#fff8e7" opacity="0.8"/>
+      <path d="M-9,-6 L0,-12 L9,-6 L0,3 Z" fill="#fff8e7" opacity="0.7"/>
+      <circle cx="0" cy="0" r="2" fill="#daa520" opacity="0.6"/>
+    </g>
+    
+    <g transform="translate(72,-58)">
+      <path d="M0,0 L4.5,-6 L9,0 L4.5,6 Z" fill="#fff8e7" opacity="0.7"/>
+      <path d="M-6,-4 L0,-9 L6,-4 L0,2.5 Z" fill="#fff8e7" opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#daa520" opacity="0.5"/>
+    </g>
+    
+    <g transform="translate(-15,45)">
+      <path d="M0,0 L3.5,-5 L7,0 L3.5,5 Z" fill="#fff8e7" opacity="0.6"/>
+      <path d="M-5,-3 L0,-7 L5,-3 L0,2 Z" fill="#fff8e7" opacity="0.5"/>
+      <circle cx="0" cy="0" r="1" fill="#daa520" opacity="0.4"/>
+    </g>
+    
+    <!-- 追加の装飾線 -->
+    <path d="M-70,20 Q0,25 70,20" stroke="#fff8e7" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M-70,50 Q0,55 70,50" stroke="#fff8e7" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- 光の効果 -->
+  <ellipse cx="256" cy="128" rx="150" ry="80" fill="url(#highlight)"/>
+  
+  <!-- 外枠の装飾 -->
+  <rect x="0" y="0" width="512" height="512" rx="100" fill="none" 
+        stroke="rgba(255,255,255,0.2)" stroke-width="8"/>
+  <rect x="12" y="12" width="488" height="488" rx="88" fill="none" 
+        stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+</svg>
